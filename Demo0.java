@@ -2,7 +2,12 @@
 // (Same program as shown in lecture 1-1).
 public class Demo0 {
 	public static void main(String[] args) {
-        String i = "2";
-        System.out.println(i);
+        int i =0;
+        while (i<=5)
+        {
+            System.out.println(i);
+            i=i+1;
+        }
+        
     }
  }
