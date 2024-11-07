@@ -8,6 +8,6 @@ public class Bill3 {
 		int total_price = Integer.parseInt(args[3]);
 		Double temp;
 		temp=Math.ceil(total_price/3.0);
-		System.out.println("Dear "+name3+", "+name2+", "+name1+": pay "+temp+" Shekels each");
+		System.out.println("Dear "+name3+", "+name2+" and "+name1+": pay "+temp+" Shekels each");
 	}
 }
