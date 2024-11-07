@@ -2,11 +2,11 @@
 public class FVCalc {
 	public static void main(String[] args){
 		int currentValue= Integer.parseInt(args[0]);
-		double rate=(double)Integer.parseInt(args[1]);
+		double rate= Double.parseDouble(args[1]);
 		int n=Integer.parseInt(args[2]);
-
 		double futureValue;
-		futureValue=currentValue * Math.pow(1+rate/100, n);
-		System.out.println("after "+ n +" years, " + currentValue + "$ saved at " + rate + "% will yield " + (int)futureValue + "$");
+		futureValue=currentValue * Math.pow(1+rate/100.0, n);
+		//After 20 years, a $100 saved at 5.0%25 will yield $265
+		System.out.println("After "+ n +" years, a $" + currentValue + " saved at " + rate + "% will yield " + (int)futureValue + "$");
 	}
 }
