@@ -21,7 +21,7 @@ public class TimeFormat {
 			if (hours<10) {
 				hours=hours%10;
 			}
-			System.out.println(hours+":"+minutes+" AM");
+			System.out.println(String.format("%d:%02d AM", hours, minutes));
 		}
 		
 	}
