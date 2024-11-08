@@ -14,7 +14,10 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 		
         if (hours>12) {
-			System.out.println(hours-12+":"+minutes+" PM");
+			System.out.println(String.format("%d:%02d PM",hours-12,minutes));
+		}
+		else if (hours==12) {
+			System.out.println(String.format("%d:%02d PM",hours,minutes));
 		}
 		else
 		{
